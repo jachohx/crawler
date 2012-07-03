@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites>
+	<site name="amazon" type="mobile">
+		<urls>
+			<url>http://www.amazon.cn/s/ref=sr_abn_pp?ie=UTF8&amp;rh=n%3A665002051&amp;page=1</url>
+		</urls>
+		<nodes xpath="//div[@class='data']">
+			<link regex="http://www.amazon.cn/(.*)/dp/(.*)/" filter="true"/>
+			<layout xpath="/h3/a" type="url"/>
+			<layout xpath="/div/span" type="price"/>
+		</nodes>
+		<nextPage replace="true" splitMark="=" firstPageNo="1" pageStr="page"/>
+	</site>
+</sites>

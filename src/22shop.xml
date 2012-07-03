@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites>
+	<site name="22shop" type="mobile">
+		<urls>
+			<url>http://www.22shop.com/select-0-0-0-0-0-0-0-1-0-0-0-0-D.html</url>
+		</urls>
+		<nodes xpath="//div[@class='mobile_tu']/div[@class='mobile_product']">
+			<link regex="http://www.22shop.com/(.*).html">
+				<param no="1" for="sid"/>
+			</link>
+			<layout xpath="/span[@class='mobile_wen']/a" type="url"/>
+			<layout xpath="/span[@class='mobile_wen']/strong" type="price"/>
+		</nodes>
+		<nextPage replace="true" splitMark="" firstPageNo="1" pageStr="select-0-0-0-0-0-0-0-"/>
+	</site>
+</sites>

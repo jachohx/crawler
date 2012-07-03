@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites>
+	<site name="360buy" type="mobile">
+		<urls>
+			<url>http://www.360buy.com/products/652-653-655.html</url>
+		</urls>
+		<nodes xpath="//div[@id='plist']/ul/li">
+			<link regex="http://www.360buy.com/product/(.*).html">
+				<param no="1" for="sid"/>
+			</link>
+			<layout xpath="/div[2]/a" type="url"/>
+			<layout xpath="/div[3]//img" type="priceImg"/>
+		</nodes>
+		<nextPage xpath="//div/div/a[@class='next']"/>
+	</site>
+</sites>

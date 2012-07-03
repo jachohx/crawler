@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites>
+	<site name="vgooo" type="mobile" charset="utf8">
+		<urls>
+			<url>http://www.vgooo.com/category/sai-0-0-0-0-0-0-1.html</url>
+		</urls>
+		<nodes xpath="//div[@class='list3 separate']/ul/li">
+			<link regex="http://www.vgooo.com/product/(.*).html">
+				<param no="1" for="sid"/>
+			</link>
+			<layout xpath="/p[@class='name']/a" type="url"/>
+			<layout xpath="/div/em[@id]" type="price"/>
+		</nodes>
+	</site>
+</sites>
